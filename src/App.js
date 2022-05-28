@@ -1,9 +1,13 @@
 import './App.css';
 import Message from './Message';
+import Welcome from './Welcome';
 
 function App() {
   return (
-    <Message text="Hello to React World" />
+    <div>
+      <Welcome />
+      <Message text="Hello to React World" />
+    </div>
   );
 }
 
