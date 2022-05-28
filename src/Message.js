@@ -1,9 +1,14 @@
 import React from 'react';
-const Message = () => {
+import PropTypes from 'prop-types';
+
+const Message = (props) => {
     return (
         <div>
-            Hello to React World
+            {props.text}
         </div>
     )
+}
+Message.propTypes = {
+    text: PropTypes.string.isRequired
 }
 export default Message;
